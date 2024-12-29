@@ -6,4 +6,3 @@ bill_amount += tip_amount
 payers_quantity = int(input("How many people are to split the bill? "))
 payers_share = bill_amount / payers_quantity
 print("Each person should pay:", round(payers_share, 2))
-124
