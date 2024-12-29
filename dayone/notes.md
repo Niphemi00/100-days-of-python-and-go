@@ -71,3 +71,4 @@
    print("I live in" city)
    ```
 
+## Project 1: BANDNAME GENERATOR USING THE INPUT FUNCTION
