@@ -4,7 +4,7 @@ Welcome to my Python and Go-lang 100-Day 100-Day Challenge repository! This jour
 
 ## Objectives
 
-Consistency: Dedicate time daily to practice Python.
+Consistency: Dedicate time daily to practice Python and go.
 
 Skill Development: Improve my problem-solving, algorithmic thinking, and understanding of Python's core concepts and libraries.
 
