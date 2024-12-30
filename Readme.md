@@ -1,6 +1,6 @@
-## Python 100-Day Challenge
+## Python and Go-lang 100-Day Challenge
 
-Welcome to my Python 100-Day Challenge repository! This journey is all about developing consistent programming habits, building projects, and deepening my understanding of Python. Each day, I'll tackle a new challenge to improve my skills and document my progress.
+Welcome to my Python and Go-lang 100-Day 100-Day Challenge repository! This journey is all about developing consistent programming habits, building projects, and deepening my understanding of Python. Each day, I'll tackle a new challenge to improve my skills and document my progress.
 
 ## Objectives
 
@@ -16,24 +16,33 @@ Documentation: Track my progress and share my learning journey.
 
 The repository is organized by days, with each day having its own folder:
 
-Python-100-Day-Challenge/
-  Day01/
-    challenge.py
-    notes.md
-  Day02/
-    challenge.py
-    notes.md
+Python-and-goLANG-100-Day-Challenge/
+  python/
+    Day01/
+      main.py
+      notes.md
+    Day02/
+      main.py
+      notes.md
+  go Lang/
+    Day01/
+      main.go
+      notes.md
+    Day02/
+      main.go
+      notes.md
   ...
 
 ## Folder Contents
 
-main.py: The solution to the day's challenge.
+main.py and main.go: The solution to the day's challenge.
 
 notes.md: Reflections, concepts learned, or challenges faced during the day.
 
 ## Tools and Technologies
 
 Python Version: 3.12.3
+go version: 1.23.4
 
 Editor: [VS Code / PyCharm / etc.] or user choice of editiors
 
@@ -55,7 +64,7 @@ Days 1-14: Basics and Core Concepts (syntax, loops, functions, data structures).
 
 Days 15-31: Intermediate Topics (file handling, OOP, error handling).
 
-Days 32-58: Intermediate+ Python Libraries and web foundation tutorial and Projects.
+Days 32-58: Intermediate+ Python and go Libraries and web foundation tutorial and Projects.
 
 Days 59-81: Advanced Topics (web scraping, APIs, databases).
 
@@ -67,9 +76,9 @@ Days 101: Conclusion and Summarization
 
 By the end of this challenge, I aim to:
 
-Master Python fundamentals and advanced topics.
+Master Python and go fundamentals and advanced topics.
 
-Build a portfolio of Python projects.
+Build a portfolio of Python and go projects.
 
 Prepare for real-world programming challenges.
 
