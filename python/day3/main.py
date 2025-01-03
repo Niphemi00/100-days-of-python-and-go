@@ -87,7 +87,7 @@ if cross_road.lower() == "left":
             print("You picked the beast feast pill...Sorry, You got eaten by beasts...Game Over!!!")
         else:
             print("Invalid Input....Game ends!!!")
-elif cross_road.lower() == "right":
+elif cross_road.lower() == "right":diddiuhuvhquuid8hvklkddoqpewehufwkiu=
     print("Sorry mate You fell into a hole. Game Over!!!")
 else:
     print("Invalid Input....Game ends!!!")
