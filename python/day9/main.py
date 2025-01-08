@@ -25,6 +25,7 @@
 # print(student_grades)
 print("Welcome to python silent Auction House!!\nBidders input your name and your bid....\nAs usual the highest bidder wins...let the bidding begin...")
 def clear_terminal():
+    """This clears the terminal by creating new lines"""
     print("\n" * 50)
 details = {}
 bidding = True
@@ -35,6 +36,9 @@ details.update({name: bid})
 
 
 def bid_process(boolean):
+    """
+    This accepts a boolean value, and helps in checking the auction continuation
+    """
     while boolean :
         auctioner_choice = input("Anyone else bidding (yes/no) ? ").lower()
         if auctioner_choice == 'yes':
