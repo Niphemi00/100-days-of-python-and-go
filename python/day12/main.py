@@ -15,6 +15,7 @@
 
 # PROJECT 12: NUMBER GUESSING GAME
 from random import randint
+
 print("Welcome to the Number Guessing Game!")
 print("\nI am thinking of a number between 1 and 100.")
 number = randint(1, 100)
@@ -22,6 +23,15 @@ number = randint(1, 100)
 # print(number)
 
 def guess_function(level):
+    """
+    Handles the guessing logic for the game.
+
+    Parameters:
+        level (int): The number of attempts the player has to guess the correct number.
+
+    The player guesses a number, and feedback is given whether the guess is too high, too low, or correct.
+    If the player runs out of attempts, the game ends with a "Game Over" message.
+    """
     while level >= 1:
         print(f"\nYou've got {level} attempts to guess the number right.")
         guess = int(input("\nMake a guess: "))
@@ -40,6 +50,14 @@ def guess_function(level):
         print(f"\nGame Over...the number is {number}")
 
 def play_game():
+    """
+    Handles the overall game flow and allows the player to choose a difficulty level.
+
+    Prompts the player to select a difficulty mode ('easy', 'medium', or 'hard') and assigns 
+    the corresponding number of attempts for the guessing game.
+
+    Calls the `guess_function` to start the guessing logic based on the chosen difficulty level.
+    """
     mode = input("\nChoose a Difficulty level. Type 'easy' or 'medium' or 'hard': ").lower()
     if mode == 'easy':
         level = 10
@@ -52,6 +70,7 @@ def play_game():
         guess_function(level)
 
 
+# Main game loop
 play_game()
 playing = True
 while playing:
