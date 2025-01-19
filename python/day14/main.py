@@ -1,3 +1,5 @@
+# Day 14: Higher or lower game project
+
 from random import choice
 
 
