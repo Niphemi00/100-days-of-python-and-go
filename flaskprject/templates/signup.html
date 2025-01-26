@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup - Yabatech</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+        body {
+        background: url('../static/images/image.jpg') no-repeat center center/cover;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .signup-container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 40px;
+      color: #f8f9fa;
+      border-radius: 8px;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .signup-container h2 {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .form-label {
+      font-weight: bold;
+    }
+
+    .form-control:focus {
+      border-color: #0d6efd;
+      box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+    }
+
+    .btn-primary {
+      width: 100%;
+      padding: 12px;
+      font-size: 1.1rem;
+    }
+
+    .signup-footer {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .signup-footer a {
+      text-decoration: none;
+      color: #0d6efd;
+    }
+
+    .signup-footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Signup Form Section -->
+  <div class="container mt-5">
+    <div class="signup-container">
+      <h2>Create Your Account</h2>
+      <form action="#" method="POST" id="signupForm">
+        <div class="mb-3">
+          <label for="fullName" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password" name="password" placeholder="Create a password" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="confirmPassword" class="form-label">Confirm Password</label>
+          <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+        </div>
+
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="termsCheck" required>
+          <label class="form-check-label" for="termsCheck">I agree to the <a href="#">Terms & Conditions</a></label>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+      </form>
+
+      <div class="signup-footer">
+        <p>Already have an account? <a href="#">Log In</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+  <script>
+    // Simple Form Validation (optional)
+    document.getElementById('signupForm').addEventListener('submit', function(e) {
+      var password = document.getElementById('password').value;
+      var confirmPassword = document.getElementById('confirmPassword').value;
+      
+      if (password !== confirmPassword) {
+        e.preventDefault();
+        alert("Passwords do not match!");
+      }
+    });
+  </script>
+
+</body>
+</html>
