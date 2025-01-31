@@ -1,10 +1,6 @@
 from data import question_data
-from quiz_brain import Quiz
-
-class Question:
-    def __init__(self, question, answer):
-        self.question = question
-        self.answer = answer
+from question_model import Question
+from quiz_brain import Quizbrain
 
 question_bank = []
 for question_info in question_data:
@@ -13,5 +9,5 @@ for question_info in question_data:
     new_question = Question(questions, answers)
     question_bank.append(new_question)
 
-quiz = Quiz(question_bank)
+quiz = Quizbrain(question_bank)
 quiz.print_question()
