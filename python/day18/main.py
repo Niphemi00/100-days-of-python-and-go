@@ -70,4 +70,5 @@ for angle in range(0, 360, 5):
 #         timmy.forward(steps)
 #         timmy.right(30)
 
+#removes the screen onece clicked on
 screen.exitonclick()
