@@ -1,6 +1,16 @@
 # # PROJECT 20
 # # SNAKE GAME
 # # MODULES NEEDED: Screen, Turtle, random, time
+
+
+# STEPS IN MAKING THIS PROJECT
+    # Step 1: make the turtle body and food, and set up the screen
+    # Step 2: set up the snake navigation system
+    # step 3: set up collision of the snake (turrle) and food random positioning
+    # step 4: set up the score board
+    # step 5: make the snake detect collision against walls and biting it self as errors which leads to game over
+
+
 import turtle
 import random
 import time
