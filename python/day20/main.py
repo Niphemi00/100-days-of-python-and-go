@@ -55,10 +55,10 @@ def move():
     global score
 
     # Move the body segments (back to front)
-    for i in range(len(snake_body) - 1, 0, -1):
-        x = snake_body[i - 1].xcor()
-        y = snake_body[i - 1].ycor()
-        snake_body[i].goto(x, y)
+    for body_block in range(len(snake_body) - 1, 0, -1):
+        x = snake_body[body_block - 1].xcor()
+        y = snake_body[body_block - 1].ycor()
+        snake_body[body_block].goto(x, y)
 
     # Move the first segment to the snake's old position
     if len(snake_body) > 0:
